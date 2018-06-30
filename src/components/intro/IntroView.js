@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Quote from './Quote.js';
+import { Link } from 'react-router-dom';
 import './IntroView.css';
 
 //assets
@@ -18,7 +19,9 @@ class IntroView extends Component {
           </div>
           <Quote/>
           <div className = 'text_container'>
-            <div className = 'text'>Continue</div>
+              <Link to = "/main" style={{ textDecoration: 'none' }}>
+                <div className = 'text'>Continue</div>
+              </Link>
           </div>
           <img src = {grafitti} className = 'intro_grafitti' alt = 'brick wall with grafitti'/>
       </div>
