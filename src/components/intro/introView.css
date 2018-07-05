@@ -70,7 +70,3 @@ table {
     animation-name: highlight;
     animation-duration: 500ms;
     animation-fill-mode: forwards; }
-  .introView_parent .quoteGen {
-    opacity: 80%;
-    font-family: "Quattrocento", serif;
-    margin: 0px 5%; }

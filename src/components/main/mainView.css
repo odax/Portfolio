@@ -34,3 +34,41 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.main_container {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .main_container .center_container {
+    max-width: 1200px; }
+    .main_container .center_container .header {
+      overflow: hidden;
+      position: fixed;
+      top: 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 71px;
+      background-color: white;
+      width: 1200px; }
+      .main_container .center_container .header .header_name {
+        font-size: 2rem;
+        margin-left: 2.4%; }
+      .main_container .center_container .header .header_nav {
+        width: 25%;
+        margin-left: 12%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem; }
+      .main_container .center_container .header .header_links {
+        margin-right: 2.4%;
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+    .main_container .center_container .title .abstract {
+      margin-top: 71px; }
+    .main_container .center_container .title .name {
+      margin-top: 70px;
+      margin-left: 67.8%;
+      margin-bottom: 25px; }

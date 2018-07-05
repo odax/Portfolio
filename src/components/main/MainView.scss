@@ -40,3 +40,62 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   table {
     border-collapse: collapse;
     border-spacing: 0; }
+
+    //Variables----------------------------------------------------------------------------------------------------
+
+    //Animations---------------------------------------------------------------------------------------------------
+
+    //Fonts
+    $font-family: 'Quattrocento', serif;
+
+    //Style--------------------------------------------------------------------------------------------------------
+
+    .main_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // border: 1px red solid;
+      .center_container {
+        max-width: 1200px;
+        // border: 1px green solid;
+        .header {
+         overflow: hidden;
+         position: fixed;
+         top: 0px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         height: 71px; 
+         background-color: white;
+         width: 1200px;
+          .header_name {
+            font-size: 2rem;
+            margin-left: 2.4%;
+          }
+          .header_nav {
+            width: 25%;
+            margin-left: 12%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+          }
+          .header_links {
+            margin-right: 2.4%;
+            width: 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+        .title {
+          .abstract {
+            margin-top: 71px;
+          }
+          .name {
+            margin-top: 70px;
+            margin-left: 67.8%;
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
