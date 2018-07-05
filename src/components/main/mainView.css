@@ -38,7 +38,8 @@ table {
 .main_container {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-family: "Quattrocento", serif; }
   .main_container .center_container {
     max-width: 1200px; }
     .main_container .center_container .header {
