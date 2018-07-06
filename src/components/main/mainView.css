@@ -54,7 +54,8 @@ table {
       width: 1200px; }
       .main_container .center_container .header .header_name {
         font-size: 2rem;
-        margin-left: 2.4%; }
+        margin-left: 2.4%;
+        visibility: hidden; }
       .main_container .center_container .header .header_nav {
         width: 25%;
         margin-left: 12%;
@@ -73,3 +74,87 @@ table {
       margin-top: 70px;
       margin-left: 67.8%;
       margin-bottom: 25px; }
+    .main_container .center_container .apps {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      .main_container .center_container .apps .apps_top {
+        width: 38%;
+        margin-top: 122px;
+        margin-bottom: 8px;
+        display: flex;
+        margin-right: 9.7%;
+        justify-content: space-between; }
+        .main_container .center_container .apps .apps_top .apps_title {
+          font-family: "Sedgwick Ave", cursive;
+          font-size: 1.2rem;
+          letter-spacing: 1px; }
+        .main_container .center_container .apps .apps_top .apps_playstore {
+          font-family: "Source Sans Pro", sans-serif;
+          font-size: 1.37rem; }
+      .main_container .center_container .apps .apps_main {
+        width: 60.5%;
+        margin-top: 60px;
+        margin-bottom: 153px;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-family: "Source Sans Pro", sans-serif; }
+        .main_container .center_container .apps .apps_main .apps_main_one {
+          display: flex;
+          width: 100%; }
+          .main_container .center_container .apps .apps_main .apps_main_one .vivahands_title_site {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 6.2%;
+            letter-spacing: .6px;
+            font-size: 1.24rem;
+            margin-top: 2px; }
+            .main_container .center_container .apps .apps_main .apps_main_one .vivahands_title_site .vivahands_title {
+              font-weight: bold;
+              margin-right: 3%; }
+            .main_container .center_container .apps .apps_main .apps_main_one .vivahands_title_site .vivahands_site {
+              margin-top: 10px;
+              margin-left: 11.5%;
+              letter-spacing: 0.8px;
+              width: 100%; }
+          .main_container .center_container .apps .apps_main .apps_main_one .vivahands_info {
+            width: 50%;
+            margin-left: 9.4%;
+            height: 125px;
+            font-size: 1.3rem;
+            text-align: left;
+            line-height: 29px; }
+        .main_container .center_container .apps .apps_main .apps_main_two {
+          display: flex;
+          width: 100%; }
+          .main_container .center_container .apps .apps_main .apps_main_two .logsnow_img {
+            margin-top: 87px; }
+          .main_container .center_container .apps .apps_main .apps_main_two .logsnow_title_site {
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 6.2%;
+            letter-spacing: .6px;
+            font-size: 1.24rem;
+            margin-top: 2px; }
+            .main_container .center_container .apps .apps_main .apps_main_two .logsnow_title_site .logsnow_title {
+              font-weight: bold;
+              margin-right: 3%;
+              margin-top: 88px; }
+            .main_container .center_container .apps .apps_main .apps_main_two .logsnow_title_site .logsnow_site {
+              margin-top: 10px;
+              margin-left: 11.5%;
+              letter-spacing: 0.8px;
+              width: 100%; }
+          .main_container .center_container .apps .apps_main .apps_main_two .logsnow_info {
+            width: 50%;
+            margin-left: 12%;
+            height: 125px;
+            font-size: 1.3rem;
+            text-align: left;
+            line-height: 29px;
+            margin-top: 85px; }

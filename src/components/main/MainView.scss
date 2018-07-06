@@ -74,6 +74,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
           .header_name {
             font-size: 2rem;
             margin-left: 2.4%;
+            visibility: hidden;
           }
           .header_nav {
             width: 25%;
@@ -98,6 +99,106 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
             margin-top: 70px;
             margin-left: 67.8%;
             margin-bottom: 25px;
+          }
+        }
+        .apps {
+          max-width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          .apps_top{
+            width: 38%;
+            margin-top: 122px;
+            margin-bottom: 8px;
+            display: flex;
+            margin-right: 9.7%;
+            justify-content: space-between;
+            .apps_title{
+              font-family: $sed;
+              font-size: 1.2rem;
+              letter-spacing: 1px;
+            }
+            .apps_playstore{
+              font-family: $source;
+              font-size: 1.37rem;
+            }
+          }
+          .apps_main{
+            width: 60.5%;
+            margin-top: 60px;
+            margin-bottom: 153px;
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: $source;
+            .apps_main_one{
+              display: flex;
+              width: 100%;
+              .vivahands_title_site{
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 6.2%;
+                letter-spacing: .6px;
+                font-size: 1.24rem;
+                margin-top: 2px;
+               .vivahands_title{
+                font-weight: bold;
+                margin-right: 3%;
+                }
+                .vivahands_site{
+                  margin-top: 10px;
+                  margin-left: 11.5%;
+                  letter-spacing: 0.8px;
+                  width: 100%;
+                }
+              }
+              .vivahands_info{
+                width: 50%;
+                margin-left: 9.4%;
+                height: 125px;
+                font-size: 1.3rem;
+                text-align: left;
+                line-height: 29px;
+              }
+            }
+            .apps_main_two{
+              display: flex;
+              width: 100%;
+              .logsnow_img{
+                margin-top: 87px;
+              }
+              .logsnow_title_site{
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-left: 6.2%;
+                letter-spacing: .6px;
+                font-size: 1.24rem;
+                margin-top: 2px;
+               .logsnow_title{
+                font-weight: bold;
+                margin-right: 3%;
+                margin-top: 88px;
+                }
+                .logsnow_site{
+                  margin-top: 10px;
+                  margin-left: 11.5%;
+                  letter-spacing: 0.8px;
+                  width: 100%;
+                }
+              }
+              .logsnow_info{
+                width: 50%;
+                margin-left: 12%;
+                height: 125px;
+                font-size: 1.3rem;
+                text-align: left;
+                line-height: 29px;
+                margin-top: 85px;
+              }
+            }
           }
         }
       }
