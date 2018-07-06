@@ -106,9 +106,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
           display: flex;
           flex-direction: column;
           align-items: flex-end;
+          margin-bottom: 2px;
           .apps_top{
             width: 38%;
-            margin-top: 122px;
+            margin-top: 130px;
             margin-bottom: 8px;
             display: flex;
             margin-right: 9.7%;
@@ -197,6 +198,35 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
                 text-align: left;
                 line-height: 29px;
                 margin-top: 85px;
+              }
+            }
+          }
+        }
+        .skills {
+          display: flex;
+          justify-content: flex-end;
+          border: 1px solid red;
+          font-family: $source;
+          .skills_right{
+            width: 66%;
+            border: 1px solid green;
+            .skills_header_1{
+              border: 1px solid blue;
+              margin-top: 25px;
+              display: flex;
+              justify-content: space-between;
+              .skills_title{
+                font-family: $sed;
+                font-size: 1.2rem;
+                margin-top: 2px;
+                letter-spacing: 1px;
+              }
+              .skills_language{
+                margin-right: 32%;
+                margin-bottom: 19px;
+                font-size: 1.2rem;
+                margin-top: -5px;
+                margin-left: 8%;
               }
             }
           }

@@ -76,57 +76,59 @@ export default class MainView extends Component {
           </div>
           <img src = {tech} className='tech_img' alt = 'tech background'/>
           <div className = 'skills'>
-            <div className = 'skills_header_1'>
-              <span className = 'skills_title'>Skills</span>
-              <span className = 'skills_language'>markup/language/framework</span>
-            </div>
-            <div className = 'skills_line'>
-              <img src = {line} className='line_img' alt = 'line'/>
-            </div>
-            <div className = 'skills_language_items'>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>LESS</li>
-                <li>SASS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Node</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>Passport</li>
-                <li>WebTokens</li>
-                <li>Jest</li>
-                <li>C</li>
-              </ul>
-            </div>
-            <div className = 'skills_header_2'>
-              <span>style/approach</span>
-            </div>
-            <div className = 'skills_line'>
-              <img src = {line} className='line_img' alt = 'line'/>
-            </div>
-            <div className = 'skills_approach_items'>
-              <ul>
-                <li>CRUD</li>
-                <li>REST</li>
-                <li>Trello</li>
-                <li>Figma</li>
-              </ul>
-            </div>
-            <div className = 'skills_header_3'>
-              <span>version control</span>
-            </div>
-            <div className = 'skills_line'>
-              line
-            </div>
-            <div className = 'skills_version_items'>
-              <ul>
-                <li>GIT</li>
-                <li>Bash</li>
-                <li>Command Line</li>
-              </ul>
+            <div className = 'skills_right'>
+              <div className = 'skills_header_1'>
+                <span className = 'skills_title'>Skills</span>
+                <span className = 'skills_language'>markup/language/framework</span>
+              </div>
+              <div className = 'skills_line'>
+                <img src = {line} className='line_img' alt = 'line'/>
+              </div>
+                <div className = 'skills_language_items'>
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>LESS</li>
+                    <li>SASS</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>Passport</li>
+                    <li>WebTokens</li>
+                    <li>Jest</li>
+                    <li>C</li>
+                  </ul>
+                </div>
+                <div className = 'skills_header_2'>
+                  <span>style/approach</span>
+                </div>
+                <div className = 'skills_line'>
+                  <img src = {line} className='line_img' alt = 'line'/>
+                </div>
+                <div className = 'skills_approach_items'>
+                  <ul>
+                    <li>CRUD</li>
+                    <li>REST</li>
+                    <li>Trello</li>
+                    <li>Figma</li>
+                  </ul>
+                </div>
+                <div className = 'skills_header_3'>
+                  <span>version control</span>
+                </div>
+                <div className = 'skills_line'>
+                  line
+                </div>
+                <div className = 'skills_version_items'>
+                  <ul>
+                    <li>GIT</li>
+                    <li>Bash</li>
+                    <li>Command Line</li>
+                  </ul>
+                </div>
             </div>
           </div>
         </div>

@@ -78,10 +78,11 @@ table {
       max-width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: flex-end; }
+      align-items: flex-end;
+      margin-bottom: 2px; }
       .main_container .center_container .apps .apps_top {
         width: 38%;
-        margin-top: 122px;
+        margin-top: 130px;
         margin-bottom: 8px;
         display: flex;
         margin-right: 9.7%;
@@ -158,3 +159,27 @@ table {
             text-align: left;
             line-height: 29px;
             margin-top: 85px; }
+    .main_container .center_container .skills {
+      display: flex;
+      justify-content: flex-end;
+      border: 1px solid red;
+      font-family: "Source Sans Pro", sans-serif; }
+      .main_container .center_container .skills .skills_right {
+        width: 66%;
+        border: 1px solid green; }
+        .main_container .center_container .skills .skills_right .skills_header_1 {
+          border: 1px solid blue;
+          margin-top: 25px;
+          display: flex;
+          justify-content: space-between; }
+          .main_container .center_container .skills .skills_right .skills_header_1 .skills_title {
+            font-family: "Sedgwick Ave", cursive;
+            font-size: 1.2rem;
+            margin-top: 2px;
+            letter-spacing: 1px; }
+          .main_container .center_container .skills .skills_right .skills_header_1 .skills_language {
+            margin-right: 32%;
+            margin-bottom: 19px;
+            font-size: 1.2rem;
+            margin-top: -5px;
+            margin-left: 8%; }
