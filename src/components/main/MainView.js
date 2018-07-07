@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './MainView.css';
-// import coffee from '../../assets/desktop_assets/coffee.png';
+import coffee from '../../assets/desktop_assets/coffee.png';
 import GitHub_Logo from '../../assets/desktop_assets/GitHub_Logo.png';
 import grafitti from '../../assets/desktop_assets/grafitti.png';
 import linkedin from '../../assets/desktop_assets/linked-in-logo-key.png';
@@ -23,9 +23,9 @@ export default class MainView extends Component {
               Nalee Riddell
             </div>
             <div className = 'header_nav'>
-              <span>Apps</span>
-              <span>Skills</span>
-              <span>Contact</span>
+              <span className='header_nav_button'>Apps</span>
+              <span className='header_nav_button'>Skills</span>
+              <span className='header_nav_button'>Contact</span>
             </div>
             <div className = 'header_links'>
               <img src = {GitHub_Logo} className='github' alt = 'github'/>
@@ -120,7 +120,7 @@ export default class MainView extends Component {
                   <span>version control</span>
                 </div>
                 <div className = 'skills_line'>
-                  line
+                  <img src = {line} className='line_img' alt = 'line'/>
                 </div>
                 <div className = 'skills_version_items'>
                   <ul>
@@ -131,8 +131,29 @@ export default class MainView extends Component {
                 </div>
             </div>
           </div>
+          <img src = {coffee} className='coffee_img' alt = 'coffee shop'/>
+          <div className = 'contact_form'>
+            <div className = 'contact_form_header'>
+              <div className = 'contact_form_header_title'>
+                Contact
+              </div>
+              <div className = 'contact_form_header_via'>
+                via below or email
+              </div>
+              <div className = 'contact_form_header_email'>
+                nr10@albion.edu
+              </div>
+            </div>
+            <div className = 'contact_line'>
+            line
+            </div>
+              <form className = 'form'>
+
+              </form>
+          </div>
         </div>
       </div>
     )
   }
 }
+
