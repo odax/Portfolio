@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './MainView.css';
+import ContactForm from './ContactForm';
 import coffee from '../../assets/desktop_assets/coffee.png';
 import GitHub_Logo from '../../assets/desktop_assets/GitHub_Logo.png';
 import grafitti from '../../assets/desktop_assets/grafitti.png';
@@ -132,37 +133,7 @@ export default class MainView extends Component {
             </div>
           </div>
           <img src = {coffee} className='coffee_img' alt = 'coffee shop'/>
-          <div className = 'contact_form'>
-            <div className = 'contact_form_header'>
-              <div className = 'contact_form_header_title'>
-                Contact
-              </div>
-              <div className = 'contact_form_header_via'>
-                via below or email
-              </div>
-              <div className = 'contact_form_header_email'>
-                nr10@albion.edu
-              </div>
-            </div>
-            <div className = 'contact_line'>
-            line
-            </div>
-              <form className = 'form'>
-                <label>
-                  <span>Name:</span>
-                    <input type='text' name='name'/>
-                </label>
-                <label>
-                  <span>Email:</span>
-                  <input type='text' name='email'/>
-
-                </label>
-                <label>
-                  <span>Message:</span>
-                  <input type='text' name='message'/>
-                </label>
-                <button>Submit</button>
-              </form>
+              <ContactForm/>
               <div className='thankyou'>
                 Thank you. Expect a response within 48 hours!
               </div>
@@ -174,7 +145,6 @@ export default class MainView extends Component {
               </div>
           </div>
         </div>
-      </div>
     )
   }
 }
