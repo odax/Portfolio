@@ -148,8 +148,30 @@ export default class MainView extends Component {
             line
             </div>
               <form className = 'form'>
+                <label>
+                  <span>Name:</span>
+                    <input type='text' name='name'/>
+                </label>
+                <label>
+                  <span>Email:</span>
+                  <input type='text' name='email'/>
 
+                </label>
+                <label>
+                  <span>Message:</span>
+                  <input type='text' name='message'/>
+                </label>
+                <button>Submit</button>
               </form>
+              <div className='thankyou'>
+                Thank you. Expect a response within 48 hours!
+              </div>
+              <div className='fineprint'>
+              Designed and created by Nalee Riddell using Figma and VSCode. To see more of his work
+              please visit his Github.com page. Images for this site were acquired and are legal for
+              private and commercial use. Github and Linkedin are properties of their respective owners.
+              Vector logos for Github and Linkedin were acquired through SD:FLKJDSLK:FJSDL:KFJ
+              </div>
           </div>
         </div>
       </div>

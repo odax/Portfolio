@@ -193,11 +193,9 @@ table {
     .main_container .center_container .skills {
       display: flex;
       justify-content: flex-end;
-      border: 1px solid red;
       font-family: "Source Sans Pro", sans-serif; }
       .main_container .center_container .skills .skills_right {
-        width: 66%;
-        border: 1px solid green; }
+        width: 66%; }
         .main_container .center_container .skills .skills_right .skills_header_1 {
           margin-top: 25px;
           display: flex;
@@ -216,7 +214,6 @@ table {
         .main_container .center_container .skills .skills_right .skills_line {
           display: flex; }
         .main_container .center_container .skills .skills_right .skills_language_items {
-          border: 1px solid red;
           display: flex;
           text-align: left;
           margin-top: 40px;
@@ -236,7 +233,6 @@ table {
           font-size: 1.2rem;
           line-height: 30px; }
         .main_container .center_container .skills .skills_right .skills_header_3 {
-          border: 1px solid red;
           margin-top: 41px;
           margin-right: 12%;
           font-size: 1.2rem;

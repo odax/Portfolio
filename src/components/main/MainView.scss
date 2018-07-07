@@ -245,11 +245,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
         .skills {
           display: flex;
           justify-content: flex-end;
-          border: 1px solid red;
           font-family: $source;
           .skills_right{
             width: 66%;
-            border: 1px solid green;
             .skills_header_1{
               margin-top: 25px;
               display: flex;
@@ -273,7 +271,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
               display: flex;
             }
             .skills_language_items{
-              border: 1px solid red;
               display: flex;
               text-align: left;
               margin-top: 40px;
@@ -296,7 +293,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
               line-height: 30px;
             }
             .skills_header_3{
-              border: 1px solid red;
               margin-top: 41px;
               margin-right: 12%;
               font-size: 1.2rem;
