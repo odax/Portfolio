@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './MainView.css';
+import axios from 'axios';
 
 export default class ContactForm extends Component {
     constructor() {
@@ -29,7 +30,11 @@ export default class ContactForm extends Component {
             message: this.state.message,
             id: {id}
         }
-        console.log(contactInfo);
+        axios.post('myurlhere', {contactInfo})
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
     }
   render() {
     return (
