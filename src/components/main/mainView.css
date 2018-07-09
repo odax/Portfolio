@@ -246,7 +246,81 @@ table {
           margin-bottom: 98px; }
     .main_container .center_container .thankyou {
       display: flex;
-      margin-top: 60px; }
+      margin-top: 60px;
+      margin-left: 7%; }
     .main_container .center_container .fineprint {
-      margin-top: 120px;
+      margin-top: 200px;
       opacity: .5; }
+    .main_container .center_container .contact_form {
+      display: flex;
+      justify-content: center;
+      height: 625px; }
+      .main_container .center_container .contact_form .contact_form_center {
+        width: 87%; }
+        .main_container .center_container .contact_form .contact_form_center .contact_form_header {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 35px;
+          margin-bottom: 11px; }
+          .main_container .center_container .contact_form .contact_form_center .contact_form_header .contact_form_header_title {
+            font-family: "Sedgwick Ave", cursive;
+            font-size: 1.3rem; }
+          .main_container .center_container .contact_form .contact_form_center .contact_form_header .contact_form_header_via {
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 1.2rem; }
+          .main_container .center_container .contact_form .contact_form_center .contact_form_header .contact_form_header_email {
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 1.2rem;
+            font-style: italic; }
+        .main_container .center_container .contact_form .contact_form_center .form {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          height: 532px;
+          justify-content: space-between;
+          font-family: "Source Sans Pro", sans-serif;
+          /* need to work on fixing up the parent-child structure in the form */ }
+          .main_container .center_container .contact_form .contact_form_center .form label {
+            min-width: 100%; }
+          .main_container .center_container .contact_form .contact_form_center .form .form_name {
+            margin-top: 32px;
+            display: flex;
+            font-size: 1.2rem; }
+          .main_container .center_container .contact_form .contact_form_center .form .input_name {
+            margin-top: 10px;
+            width: 100%;
+            padding: 12px 0px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            background-color: #F7F7F7;
+            color: teal; }
+          .main_container .center_container .contact_form .contact_form_center .form .form_email {
+            margin-top: 32px;
+            display: flex;
+            font-size: 1.2rem; }
+          .main_container .center_container .contact_form .contact_form_center .form .input_email {
+            margin-top: 10px;
+            width: 100%;
+            padding: 12px 0px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            background-color: #E0E0E0;
+            color: teal; }
+          .main_container .center_container .contact_form .contact_form_center .form .form_message {
+            margin-top: 32px;
+            display: flex;
+            font-size: 1.2rem; }
+          .main_container .center_container .contact_form .contact_form_center .form .input_message {
+            margin-top: 10px;
+            width: 100%;
+            height: 150px;
+            padding: 12px 0px;
+            box-sizing: border-box;
+            resize: none;
+            background-color: #BDBDBD;
+            color: teal;
+            font-family: "Source Sans Pro", sans-serif; }
+          .main_container .center_container .contact_form .contact_form_center .form .submitbutton {
+            border: none; }
