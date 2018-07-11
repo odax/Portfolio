@@ -12,6 +12,8 @@ export default class ContactForm extends Component {
             name: '',
             email: '',
             message: '',
+            messagebox: '',
+            messageboxcolor: ''
         };
     }
 
@@ -22,21 +24,37 @@ export default class ContactForm extends Component {
         this.setState({email: event.target.value});
     }
     onChangeMessage = (event) => {
-        this.setState({email: event.target.value});
+        this.setState({message: event.target.value});
     }
-    onSubmit = (event) => {
+    submitChecker = (event) => {
         event.preventDefault();
-        let id = Math.floor(Math.random() * (10000 - 1 + 1) + 1);
+        if (this.state.name && this.state.email && this.state.message !== '') {
+            this.onSubmitSuccess(event);
+        } else {
+            this.onSubmitFailure();
+        }
+    }
+    onSubmitFailure = () => {
+        console.log('Please fill out the whole form before you try sending!');
+        this.setState({messagebox: 'Please fill out the all fields and then try submitting again!'});
+        this.setState({messageboxcolor: 'red'});
+    }
+    onSubmitSuccess = (event) => {
+        const id = Math.floor(Math.random() * (10000 - 1 + 1) + 1);
         const contactInfo = {
             name: this.state.name,
             email: this.state.email,
             message: this.state.message,
-            id: {id}
+            id
         }
-        axios.post('https://naleesportfolio.herokuapp.com/main', {contactInfo})
+        axios.post('https://naleesportfolio.herokuapp.com/main', contactInfo)
             .then(res => {
                 console.log(res);
-                console.log(res.data);
+                this.setState({name: '', email: '', message: '', messagebox: 'Message Sent Successfully!', messageboxcolor: 'green'})
+                console.log('message sent!')
+            })
+            .catch(err => {
+                this.setState({messagebox: 'Sorry! There was a problem on the server, message not sent. Try emailing me!'})
             })
     }
   render() {
@@ -48,32 +66,31 @@ export default class ContactForm extends Component {
                 <div className = 'contact_form_header_title'>
                   Contact
                 </div>
-                <div className = 'contact_form_header_via'>
-                    through form or email
-                </div>
                 <div className = 'contact_form_header_email'>
-                  nr10@albion.edu
+                  Email: nr10@albion.edu
                 </div>
               </div>
 
               <img src = {coffee_line} className='coffee_line_img' alt = 'line'/>
 
-                <form className = 'form' onSubmit ={this.onSubmit}>
+                <form className = 'form' onSubmit ={this.submitChecker}>
                   <label>
                       <div className= 'form_name'>Name:</div>
-                      <input type='text' name='name' onChange={this.onChangeName} className= 'input_name'/>
+                      <input type='text' name='name' onChange={this.onChangeName} className= 'input_name' value={this.state.name}/>
                   </label>
                   <label>
                     <div className= 'form_email'>Email:</div>
-                    <input type='text' name='email' onChange={this.onChangeEmail} className= 'input_email'/>
+                    <input type='text' name='email' onChange={this.onChangeEmail} className= 'input_email' value={this.state.email}/>
 
                   </label>
                   <label>
                     <div className = 'form_message'>Message:</div>
-                    <textarea type='text' name='message' onChange={this.onChangeMessage} className= 'input_message'/>
+                    <textarea type='text' name='message' onChange={this.onChangeMessage} className= 'input_message' value={this.state.message}/>
                   </label>
-
-                  <button type='submit'><img src = {submit} className='submitbutton' alt = 'submit'/></button>
+                  <div className= 'button_message'>
+                    <button type='submit' class='button'><span>Submit</span></button>
+                    <div className= 'messagebox' style = {{color:this.state.messageboxcolor}}>{this.state.messagebox}</div>
+                  </div>
                 </form>
               </div>
           </div>

@@ -7,8 +7,6 @@ import grafitti from '../../assets/desktop_assets/grafitti.png';
 import linkedin from '../../assets/desktop_assets/linked-in-logo-key.png';
 import logsnow from '../../assets/desktop_assets/logsnow.png';
 import name from '../../assets/desktop_assets/namesingle.png';
-// import namebar from '../../assets/desktop_assets/namebar.png';
-// import submit from '../../assets/desktop_assets/submit.png';
 import tech from '../../assets/desktop_assets/tech.png';
 import vivahands from '../../assets/desktop_assets/Vivahands.png';
 import abstract from '../../assets/desktop_assets/abstract.png';
@@ -20,25 +18,22 @@ export default class MainView extends Component {
       <div className = 'main_container'>
         <div className = 'center_container'>
           <div className = 'header'>
-            <div className = 'header_name'>
-              Nalee Riddell
-            </div>
             <div className = 'header_nav'>
-              <span className='header_nav_button'>Apps</span>
-              <span className='header_nav_button'>Skills</span>
-              <span className='header_nav_button'>Contact</span>
+              <a href='#appsid' className='header_nav_button'>Apps</a>
+              <a href='#skillsid' className='header_nav_button'>Skills</a>
+              <a href='#contactid' className='header_nav_button'>Contact</a>
             </div>
             <div className = 'header_links'>
-              <img src = {GitHub_Logo} className='github' alt = 'github'/>
-              <img src = {linkedin} className='linkedin' alt = 'linked in'/>
-            </div>
+            <a target="_blank" href="https://github.com/odax"><img src = {GitHub_Logo} className='github' alt = 'github'/></a>
+            <a target="_blank" href="https://www.linkedin.com/in/nalee-riddell/"><img src = {linkedin} className='linkedin' alt = 'linked in'/></a>
+          </div>
           </div>
           <div className = 'title'>
             <img src = {abstract} className='abstract' alt = 'abstract art'/>
             <img src = {name} className= 'name' alt = 'Nalee Riddell'/>
             <img src = {grafitti} className = 'grafitti' alt = 'grafitti art'/>
           </div>
-          <div className = 'apps'>
+          <a className = 'apps' id='appsid'>
             <div className ='apps_top'>
               <span className = 'apps_title'>Apps</span>
               <span className = 'apps_playstore'>availible on the playstore</span>
@@ -74,7 +69,7 @@ export default class MainView extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </a>
           <img src = {tech} className='tech_img' alt = 'tech background'/>
           <div className = 'skills'>
             <div className = 'skills_right'>
@@ -135,7 +130,7 @@ export default class MainView extends Component {
           <img src = {coffee} className='coffee_img' alt = 'coffee shop'/>
               <ContactForm/>
               <div className='thankyou'>
-                Thank you. Expect a response within 48 hours!
+                Typical response is within 48 hours.
               </div>
               <div className='fineprint'>
               Designed and created by Nalee Riddell using Figma and VSCode. To see more of his work
