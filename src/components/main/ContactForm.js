@@ -54,7 +54,7 @@ export default class ContactForm extends Component {
                 console.log('message sent!')
             })
             .catch(err => {
-                this.setState({messagebox: 'Sorry! There was a problem on the server, message not sent. Try emailing me!'})
+                this.setState({messagebox: 'Sorry! There was a problem on the server, message not sent. Try emailing me!'});
             })
     }
   render() {

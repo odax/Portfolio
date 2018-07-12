@@ -309,10 +309,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
             flex-direction: column;
             justify-content: space-between;
             font-family: $source;
+            @include smaller {
+              flex-direction: column;
+              height: 660px;
+            }
             .apps_main_one{
               display: flex;
               width: 100%;
+              border: 1px solid red;
+              @include smaller {
+                flex-direction: column;
+                height: 1800px;
+              }
               .vivahands_title_site{
+                border: 1px solid green;
                 max-width: 100%;
                 display: flex;
                 flex-direction: column;
@@ -321,28 +331,47 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
                 font-size: 1.24rem;
                 margin-top: 2px;
                .vivahands_title{
+                 border: 1px solid blue;
                 font-weight: bold;
                 margin-right: 3%;
+                @include smaller {
+                  margin-left: -2.7%;
+                  height: 20px;
+                }
                 }
                 .vivahands_site{
+                  border: 1px solid yellow;
                   margin-top: 10px;
                   margin-left: 11.5%;
                   letter-spacing: 0.8px;
                   width: 100%;
+                  @include smaller {
+                    margin-left: -2.7%;
+                  }
                 }
               }
               .vivahands_info{
+                border: 1px solid orange;
                 width: 50%;
                 margin-left: 9.4%;
                 height: 125px;
                 font-size: 1.3rem;
                 text-align: left;
                 line-height: 29px;
+                @include smaller {
+                  width: 70%;
+                  margin-top: 20px;
+                  margin-left: 17%;
+                }
               }
             }
             .apps_main_two{
               display: flex;
               width: 100%;
+              @include smaller {
+                flex-direction: column;
+                height: 1400px;
+              }
               .logsnow_img{
                 margin-top: 87px;
               }
