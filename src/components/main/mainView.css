@@ -157,8 +157,7 @@ table {
       height: 71px;
       background-color: white;
       width: 1200px;
-      border-bottom: 1px solid #3b363d;
-      box-shadow: 0px 0px 0px #3b363d; }
+      border-bottom: 1px solid #3b363d; }
       @media (max-width: 399px) {
         .main_container .center_container .header {
           height: 40px; } }
@@ -206,7 +205,10 @@ table {
           @media (max-width: 399px) {
             .main_container .center_container .header .header_nav .header_nav_button {
               color: blue;
-              margin-right: 2%; } }
+              margin-right: 2%;
+              border: 1px solid red;
+              margin-left: 5%;
+              margin-bottom: 4px; } }
         .main_container .center_container .header .header_nav .header_nav_button:hover {
           cursor: pointer;
           animation-name: highlight_nav;
@@ -235,7 +237,7 @@ table {
             margin-top: 4px; } }
         @media (max-width: 399px) {
           .main_container .center_container .header .header_links {
-            margin-right: 76%;
+            margin-right: 75%;
             margin-top: 2px; } }
         @media (min-width: 400px) and (max-width: 599px) {
           .main_container .center_container .header .header_links .github {
@@ -259,6 +261,16 @@ table {
           animation-name: highlight_link;
           animation-duration: 250ms;
           animation-fill-mode: forwards; }
+    @media (min-width: 400px) and (max-width: 599px) {
+      .main_container .center_container .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+    @media (max-width: 399px) {
+      .main_container .center_container .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
     .main_container .center_container .title .abstract {
       margin-top: 71px;
       max-width: 100%;
@@ -285,8 +297,8 @@ table {
         .main_container .center_container .title .name {
           margin-left: 10%;
           margin-right: 5%;
-          margin-top: 40px;
-          margin-bottom: 40px;
+          margin-top: 80px;
+          margin-bottom: 80px;
           transform: scale(0.7); } }
     .main_container .center_container .title .grafitti {
       max-width: 100%;
@@ -322,7 +334,7 @@ table {
         .main_container .center_container .apps {
           margin-right: 1%;
           align-items: center;
-          margin-top: 40px;
+          margin-top: 10px;
           margin-bottom: 0px; } }
       .main_container .center_container .apps .apps_top {
         width: 48%;
@@ -331,7 +343,6 @@ table {
         display: flex;
         margin-right: 0%;
         justify-content: space-between;
-        border: 1px solid red;
         border-bottom: black 1px solid; }
         @media (min-width: 900px) and (max-width: 1023px) {
           .main_container .center_container .apps .apps_top {
@@ -340,10 +351,13 @@ table {
           font-family: "Sedgwick Ave", cursive;
           font-size: 1.2rem;
           letter-spacing: 1px; }
+          @media (max-width: 399px) {
+            .main_container .center_container .apps .apps_top .apps_title {
+              margin-top: 25px; } }
         .main_container .center_container .apps .apps_top .apps_playstore {
           font-family: "Source Sans Pro", sans-serif;
           font-size: 1.37rem;
-          border: 1px solid green; }
+          text-decoration: line-through; }
       .main_container .center_container .apps .apps_main {
         width: 60.5%;
         margin-top: 60px;
@@ -352,8 +366,7 @@ table {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        font-family: "Source Sans Pro", sans-serif;
-        border: 1px solid red; }
+        font-family: "Source Sans Pro", sans-serif; }
         @media (min-width: 900px) and (max-width: 1023px) {
           .main_container .center_container .apps .apps_main {
             flex-direction: column;
@@ -375,8 +388,7 @@ table {
             width: 95%; } }
         .main_container .center_container .apps .apps_main .apps_main_one {
           display: flex;
-          width: 100%;
-          border: 1px solid red; }
+          width: 100%; }
           @media (min-width: 900px) and (max-width: 1023px) {
             .main_container .center_container .apps .apps_main .apps_main_one {
               flex-direction: column;
@@ -393,8 +405,11 @@ table {
             .main_container .center_container .apps .apps_main .apps_main_one {
               flex-direction: column;
               height: 1800px; } }
+          .main_container .center_container .apps .apps_main .apps_main_one .vivahands_img:hover {
+            animation-name: highlight_link;
+            animation-duration: 400ms;
+            animation-fill-mode: forwards; }
           .main_container .center_container .apps .apps_main .apps_main_one .vivahands_title_site {
-            border: 1px solid green;
             max-width: 100%;
             display: flex;
             flex-direction: column;
@@ -403,7 +418,6 @@ table {
             font-size: 1.24rem;
             margin-top: 2px; }
             .main_container .center_container .apps .apps_main .apps_main_one .vivahands_title_site .vivahands_title {
-              border: 1px solid blue;
               font-weight: bold;
               margin-right: 3%; }
               @media (min-width: 900px) and (max-width: 1023px) {
@@ -423,11 +437,11 @@ table {
                   margin-left: -2.7%;
                   height: 20px; } }
             .main_container .center_container .apps .apps_main .apps_main_one .vivahands_title_site .vivahands_site {
-              border: 1px solid yellow;
               margin-top: 10px;
               margin-left: 11.5%;
               letter-spacing: 0.8px;
-              width: 100%; }
+              width: 100%;
+              visibility: hidden; }
               @media (min-width: 900px) and (max-width: 1023px) {
                 .main_container .center_container .apps .apps_main .apps_main_one .vivahands_title_site .vivahands_site {
                   margin-left: -2.7%;
@@ -445,7 +459,6 @@ table {
                   margin-left: -2.7%;
                   margin-top: 0px; } }
           .main_container .center_container .apps .apps_main .apps_main_one .vivahands_info {
-            border: 1px solid orange;
             width: 50%;
             margin-left: 9.4%;
             height: 125px;
@@ -480,8 +493,7 @@ table {
                 font-size: 1rem; } }
         .main_container .center_container .apps .apps_main .apps_main_two {
           display: flex;
-          width: 100%;
-          border: 1px solid red; }
+          width: 100%; }
           @media (min-width: 900px) and (max-width: 1023px) {
             .main_container .center_container .apps .apps_main .apps_main_two {
               flex-direction: column;
@@ -500,6 +512,10 @@ table {
               height: 1900px; } }
           .main_container .center_container .apps .apps_main .apps_main_two .logsnow_img {
             margin-top: 87px; }
+          .main_container .center_container .apps .apps_main .apps_main_two .logsnow_img:hover {
+            animation-name: highlight_link;
+            animation-duration: 400ms;
+            animation-fill-mode: forwards; }
           .main_container .center_container .apps .apps_main .apps_main_two .logsnow_title_site {
             max-width: 100%;
             display: flex;
@@ -507,13 +523,11 @@ table {
             margin-left: 6.2%;
             letter-spacing: 0.6px;
             font-size: 1.24rem;
-            margin-top: 2px;
-            border: 1px solid blue; }
+            margin-top: 2px; }
             .main_container .center_container .apps .apps_main .apps_main_two .logsnow_title_site .logsnow_title {
               font-weight: bold;
               margin-right: 3%;
-              margin-top: 88px;
-              border: 1px solid red; }
+              margin-top: 88px; }
               @media (min-width: 900px) and (max-width: 1023px) {
                 .main_container .center_container .apps .apps_main .apps_main_two .logsnow_title_site .logsnow_title {
                   margin: 0 7% 0 0; } }
@@ -530,7 +544,7 @@ table {
               margin-top: 10px;
               margin-left: 11.5%;
               letter-spacing: 0.8px;
-              border: 1px solid green; }
+              visibility: hidden; }
               @media (min-width: 900px) and (max-width: 1023px) {
                 .main_container .center_container .apps .apps_main .apps_main_two .logsnow_title_site .logsnow_site {
                   margin: 0 7% 0 0; } }
@@ -550,8 +564,7 @@ table {
             font-size: 1.2rem;
             text-align: left;
             line-height: 29px;
-            margin-top: 85px;
-            border: 1px solid teal; }
+            margin-top: 85px; }
             @media (min-width: 900px) and (max-width: 1023px) {
               .main_container .center_container .apps .apps_main .apps_main_two .logsnow_info {
                 margin: 80px 0px 0px 27%;
@@ -608,6 +621,14 @@ table {
           display: flex;
           justify-content: space-between;
           border-bottom: 1px solid black; }
+          @media (min-width: 400px) and (max-width: 599px) {
+            .main_container .center_container .skills .skills_right .skills_header_1 {
+              flex-direction: column;
+              align-items: flex-start; } }
+          @media (max-width: 399px) {
+            .main_container .center_container .skills .skills_right .skills_header_1 {
+              flex-direction: column;
+              align-items: flex-start; } }
           .main_container .center_container .skills .skills_right .skills_header_1 .skills_title {
             font-family: "Sedgwick Ave", cursive;
             font-size: 1.2rem;
@@ -618,12 +639,29 @@ table {
             font-size: 1.2rem;
             margin-top: -5px;
             margin-left: 8%; }
+            @media (min-width: 400px) and (max-width: 599px) {
+              .main_container .center_container .skills .skills_right .skills_header_1 .skills_language {
+                margin-left: 0px;
+                font-size: 1rem; } }
+            @media (max-width: 399px) {
+              .main_container .center_container .skills .skills_right .skills_header_1 .skills_language {
+                margin-left: 0px;
+                font-size: 1rem; } }
         .main_container .center_container .skills .skills_right .skills_language_items {
           display: flex;
           text-align: left;
           margin-top: 40px;
           font-size: 1.3rem;
           line-height: 30px; }
+          @media (min-width: 600px) and (max-width: 899px) {
+            .main_container .center_container .skills .skills_right .skills_language_items {
+              font-size: 1.1rem; } }
+          @media (min-width: 400px) and (max-width: 599px) {
+            .main_container .center_container .skills .skills_right .skills_language_items {
+              font-size: 1rem; } }
+          @media (max-width: 399px) {
+            .main_container .center_container .skills .skills_right .skills_language_items {
+              font-size: 1rem; } }
         .main_container .center_container .skills .skills_right .skills_header_2 {
           margin-top: 30px;
           display: flex;
@@ -632,18 +670,41 @@ table {
           margin-bottom: 36px;
           border-bottom: 1px solid black;
           padding-bottom: 4px; }
+          @media (min-width: 400px) and (max-width: 599px) {
+            .main_container .center_container .skills .skills_right .skills_header_2 {
+              justify-content: flex-start; } }
+          @media (max-width: 399px) {
+            .main_container .center_container .skills .skills_right .skills_header_2 {
+              justify-content: flex-start; } }
         .main_container .center_container .skills .skills_right .skills_approach_items {
           display: flex;
           text-align: left;
           margin-top: 40px;
           font-size: 1.2rem;
           line-height: 30px; }
+          @media (min-width: 600px) and (max-width: 899px) {
+            .main_container .center_container .skills .skills_right .skills_approach_items {
+              font-size: 1.1rem; } }
+          @media (min-width: 400px) and (max-width: 599px) {
+            .main_container .center_container .skills .skills_right .skills_approach_items {
+              font-size: 1rem; } }
+          @media (max-width: 399px) {
+            .main_container .center_container .skills .skills_right .skills_approach_items {
+              font-size: 1rem; } }
         .main_container .center_container .skills .skills_right .skills_header_3 {
           margin-top: 49px;
           font-size: 1.2rem;
           margin-bottom: 30px;
           border-bottom: 1px solid black;
           padding-bottom: 4px; }
+          @media (min-width: 400px) and (max-width: 599px) {
+            .main_container .center_container .skills .skills_right .skills_header_3 {
+              display: flex;
+              justify-content: flex-start; } }
+          @media (max-width: 399px) {
+            .main_container .center_container .skills .skills_right .skills_header_3 {
+              display: flex;
+              justify-content: flex-start; } }
         .main_container .center_container .skills .skills_right .skills_version_items {
           display: flex;
           text-align: left;
@@ -651,6 +712,15 @@ table {
           font-size: 1.2rem;
           line-height: 30px;
           margin-bottom: 98px; }
+          @media (min-width: 600px) and (max-width: 899px) {
+            .main_container .center_container .skills .skills_right .skills_version_items {
+              font-size: 1.1rem; } }
+          @media (min-width: 400px) and (max-width: 599px) {
+            .main_container .center_container .skills .skills_right .skills_version_items {
+              font-size: 1rem; } }
+          @media (max-width: 399px) {
+            .main_container .center_container .skills .skills_right .skills_version_items {
+              font-size: 1rem; } }
     .main_container .center_container .coffee_img {
       max-width: 100%;
       height: auto; }

@@ -233,7 +233,6 @@ $sed: "Sedgwick Ave", cursive;
       background-color: white;
       width: 1200px;
       border-bottom: 1px solid #3b363d;
-      box-shadow: 0px 0px 0px #3b363d;
       @include phone {
         height: 40px;
       }
@@ -282,6 +281,9 @@ $sed: "Sedgwick Ave", cursive;
           @include phone {
             color: blue;
             margin-right: 2%;
+            border: 1px solid red;
+            margin-left: 5%;
+            margin-bottom: 4px;
           }
         }
         .header_nav_button:hover {
@@ -313,8 +315,9 @@ $sed: "Sedgwick Ave", cursive;
           margin-top: 4px;
         }
         @include phone {
-          margin-right: 76%;
+          margin-right: 75%;
           margin-top: 2px;
+          
         }
         .github {
           @include smalltab {
@@ -347,6 +350,16 @@ $sed: "Sedgwick Ave", cursive;
       }
     }
     .title {
+      @include smalltab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @include phone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
       .abstract {
         margin-top: 71px;
         max-width: 100%;
@@ -373,8 +386,8 @@ $sed: "Sedgwick Ave", cursive;
         @include phone {
           margin-left: 10%;
           margin-right: 5%;
-          margin-top: 40px;
-          margin-bottom: 40px;
+          margin-top: 80px;
+          margin-bottom: 80px;
           transform: scale(.7);
         }
       }
@@ -413,7 +426,7 @@ $sed: "Sedgwick Ave", cursive;
       @include phone {
         margin-right: 1%;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 10px;
         margin-bottom: 0px;
       }
       .apps_top {
@@ -423,7 +436,6 @@ $sed: "Sedgwick Ave", cursive;
         display: flex;
         margin-right: 0%;
         justify-content: space-between;
-        border: 1px solid red;
         border-bottom: black 1px solid;
         @include smaller {
           width: 49.5%;
@@ -432,11 +444,14 @@ $sed: "Sedgwick Ave", cursive;
           font-family: $sed;
           font-size: 1.2rem;
           letter-spacing: 1px;
+          @include phone {
+            margin-top: 25px;
+          }
         }
         .apps_playstore {
           font-family: $source;
           font-size: 1.37rem;
-          border: 1px solid green;
+          text-decoration: line-through;
         }
       }
       .apps_main {
@@ -448,7 +463,6 @@ $sed: "Sedgwick Ave", cursive;
         flex-direction: column;
         justify-content: space-between;
         font-family: $source;
-        border: 1px solid red;
         @include smaller {
           flex-direction: column;
           height: 660px;
@@ -471,7 +485,6 @@ $sed: "Sedgwick Ave", cursive;
         .apps_main_one {
           display: flex;
           width: 100%;
-          border: 1px solid red;
           @include smaller {
             flex-direction: column;
             height: 1800px;
@@ -488,8 +501,12 @@ $sed: "Sedgwick Ave", cursive;
             flex-direction: column;
             height: 1800px;
           }
+          .vivahands_img:hover {
+            animation-name: highlight_link;
+            animation-duration: 400ms;
+            animation-fill-mode: forwards;
+          }
           .vivahands_title_site {
-            border: 1px solid green;
             max-width: 100%;
             display: flex;
             flex-direction: column;
@@ -498,7 +515,6 @@ $sed: "Sedgwick Ave", cursive;
             font-size: 1.24rem;
             margin-top: 2px;
             .vivahands_title {
-              border: 1px solid blue;
               font-weight: bold;
               margin-right: 3%;
               @include smaller {
@@ -519,11 +535,11 @@ $sed: "Sedgwick Ave", cursive;
               }
             }
             .vivahands_site {
-              border: 1px solid yellow;
               margin-top: 10px;
               margin-left: 11.5%;
               letter-spacing: 0.8px;
               width: 100%;
+              visibility: hidden;
               @include smaller {
                 margin-left: -2.7%;
                 margin-top: 0px;
@@ -543,7 +559,6 @@ $sed: "Sedgwick Ave", cursive;
             }
           }
           .vivahands_info {
-            border: 1px solid orange;
             width: 50%;
             margin-left: 9.4%;
             height: 125px;
@@ -581,7 +596,6 @@ $sed: "Sedgwick Ave", cursive;
         .apps_main_two {
           display: flex;
           width: 100%;
-          border: 1px solid red;
           @include smaller {
             flex-direction: column;
             height: 1900px;
@@ -601,6 +615,11 @@ $sed: "Sedgwick Ave", cursive;
           .logsnow_img {
             margin-top: 87px;
           }
+          .logsnow_img:hover {
+            animation-name: highlight_link;
+            animation-duration: 400ms;
+            animation-fill-mode: forwards;
+          }
           .logsnow_title_site {
             max-width: 100%;
             display: flex;
@@ -609,12 +628,10 @@ $sed: "Sedgwick Ave", cursive;
             letter-spacing: 0.6px;
             font-size: 1.24rem;
             margin-top: 2px;
-            border: 1px solid blue;
             .logsnow_title {
               font-weight: bold;
               margin-right: 3%;
               margin-top: 88px;
-              border: 1px solid red;
               @include smaller{
                 margin: 0 7% 0 0;
               }
@@ -632,7 +649,7 @@ $sed: "Sedgwick Ave", cursive;
               margin-top: 10px;
               margin-left: 11.5%;
               letter-spacing: 0.8px;
-              border: 1px solid green;
+              visibility: hidden;
               @include smaller{
                 margin: 0 7% 0 0;
               }
@@ -655,7 +672,6 @@ $sed: "Sedgwick Ave", cursive;
             text-align: left;
             line-height: 29px;
             margin-top: 85px;
-            border: 1px solid teal;
             @include smaller{
               margin: 80px 0px 0px 27%;
               width: 70%;
@@ -717,7 +733,14 @@ $sed: "Sedgwick Ave", cursive;
           display: flex;
           justify-content: space-between;
           border-bottom: 1px solid black;
-
+          @include smalltab {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          @include phone {
+          flex-direction: column;
+          align-items: flex-start;
+          }
           .skills_title {
             font-family: $sed;
             font-size: 1.2rem;
@@ -730,7 +753,14 @@ $sed: "Sedgwick Ave", cursive;
             font-size: 1.2rem;
             margin-top: -5px;
             margin-left: 8%;
-
+            @include smalltab {
+              margin-left: 0px;
+              font-size: 1rem;
+            }
+            @include phone {
+              margin-left: 0px;
+              font-size: 1rem;
+            }
           }
         }
         .skills_language_items {
@@ -739,6 +769,15 @@ $sed: "Sedgwick Ave", cursive;
           margin-top: 40px;
           font-size: 1.3rem;
           line-height: 30px;
+          @include tab {
+            font-size: 1.1rem;
+          }
+          @include smalltab {
+            font-size: 1rem;
+          }
+          @include phone {
+            font-size: 1rem;
+          }
 
         }
         .skills_header_2 {
@@ -749,6 +788,12 @@ $sed: "Sedgwick Ave", cursive;
           margin-bottom: 36px;
           border-bottom: 1px solid black;
           padding-bottom: 4px;
+          @include smalltab {
+            justify-content: flex-start;
+          }
+          @include phone {
+            justify-content: flex-start;
+          }
         }
         .skills_approach_items {
           display: flex;
@@ -756,7 +801,15 @@ $sed: "Sedgwick Ave", cursive;
           margin-top: 40px;
           font-size: 1.2rem;
           line-height: 30px;
-
+          @include tab {
+            font-size: 1.1rem;
+          }
+          @include smalltab {
+            font-size: 1rem;
+          }
+          @include phone {
+            font-size: 1rem;
+          }
         }
         .skills_header_3 {
           margin-top: 49px;
@@ -764,7 +817,14 @@ $sed: "Sedgwick Ave", cursive;
           margin-bottom: 30px;
           border-bottom: 1px solid black;
           padding-bottom: 4px;
-          
+          @include smalltab {
+            display: flex;
+            justify-content: flex-start;
+          }
+          @include phone {
+            display: flex;
+            justify-content: flex-start;
+          }
         }
         .skills_version_items {
           display: flex;
@@ -773,7 +833,15 @@ $sed: "Sedgwick Ave", cursive;
           font-size: 1.2rem;
           line-height: 30px;
           margin-bottom: 98px;
-
+          @include tab {
+            font-size: 1.1rem;
+          }
+          @include smalltab {
+            font-size: 1rem;
+          }
+          @include phone {
+            font-size: 1rem;
+          }
         }
       }
     }

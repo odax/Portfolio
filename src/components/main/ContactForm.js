@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./MainView.css";
 import axios from "axios";
-import coffee_line from "../../assets/desktop_assets/coffee_line.png";
 
 export default class ContactForm extends Component {
   constructor() {
