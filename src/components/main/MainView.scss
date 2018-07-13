@@ -235,7 +235,7 @@ $sed: "Sedgwick Ave", cursive;
       border-bottom: 1px solid #3b363d;
       z-index: 100;
       @include phone {
-        height: 40px;
+        height: 56px;
       }
       a {
         color: black;
@@ -266,23 +266,11 @@ $sed: "Sedgwick Ave", cursive;
           display: flex;
           align-items: center;
           margin-top: 4px;
-          @include small {
-            color: red;
-          }
-          @include smaller {
-            color: green;
-          }
-          @include tab {
-            color: orange;
-          }
           @include smalltab {
-            color: grey;
             margin-right: 5%;
           }
           @include phone {
-            color: blue;
             margin-right: 2%;
-            border: 1px solid red;
             margin-left: 5%;
             margin-bottom: 4px;
           }
@@ -366,7 +354,7 @@ $sed: "Sedgwick Ave", cursive;
         max-width: 100%;
         height: auto;
         @include phone {
-          margin-top: 40px;
+          margin-top: 56px;
         }
       }
       .name {
@@ -378,10 +366,10 @@ $sed: "Sedgwick Ave", cursive;
           margin-right: 48%;
         }
         @include smalltab {
-          margin-left: 13%;
+          margin-left: 30%;
           margin-right: 60%;
-          margin-top: 40px;
-          margin-bottom: 40px;
+          margin-top: 80px;
+          margin-bottom: 80px;
           transform: scale(.8);
         }
         @include phone {

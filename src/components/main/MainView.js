@@ -10,7 +10,6 @@ import name from "../../assets/desktop_assets/namesingle.png";
 import tech from "../../assets/desktop_assets/tech.png";
 import vivahands from "../../assets/desktop_assets/Vivahands.png";
 import abstract from "../../assets/desktop_assets/abstract.png";
-import line from "../../assets/desktop_assets/Line.png";
 import Fade from 'react-reveal/Fade';
 
 export default class MainView extends Component {
@@ -47,13 +46,13 @@ export default class MainView extends Component {
             <img src={name} className="name" alt="Nalee Riddell" />
             <img src={grafitti} className="grafitti" alt="grafitti art" />
           </div>
-          <a className="apps" id="appsid">
+          <div id='appsid'></div>
+          <a className="apps">
             <div className="apps_top">
               <span className="apps_title">Apps</span>
               <span className="apps_playstore">availible on the playstore</span>
             </div>
             <div className="apps_main">
-            <Fade top>
               <div className="apps_main_one">
                 <div>
                   <img
@@ -71,8 +70,6 @@ export default class MainView extends Component {
                   your loved ones no matter the distance between.
                 </div>
               </div>
-            </Fade>
-            <Fade top>
               <div className="apps_main_two">
                 <div>
                   <img
@@ -90,10 +87,10 @@ export default class MainView extends Component {
                   firewood suppliers and vice-versa.
                 </div>
               </div>
-            </Fade>
             </div>
           </a>
           <img src={tech} className="tech_img" alt="tech background" />
+          <div id='skillsid'></div>
           <div className="skills">
             <div className="skills_right">
               <div className="skills_header_1">
@@ -150,14 +147,11 @@ export default class MainView extends Component {
             </div>
           </div>
           <img src={coffee} className="coffee_img" alt="coffee shop" />
+          <div id='contactid'></div>
           <ContactForm />
           <div className="fineprint">
             Designed and created by Nalee Riddell using Figma and VSCode. To see
-            more of his work please visit his Github.com page. Images for this
-            site were acquired and are legal for private and commercial use.
-            Github and Linkedin are properties of their respective owners.
-            Vector logos for Github and Linkedin were acquired through
-            SD:FLKJDSLK:FJSDL:KFJ
+            more work please visit  Github.com/odax.
           </div>
         </div>
       </div>

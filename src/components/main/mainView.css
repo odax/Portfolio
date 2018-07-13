@@ -161,7 +161,7 @@ table {
       z-index: 100; }
       @media (max-width: 399px) {
         .main_container .center_container .header {
-          height: 40px; } }
+          height: 56px; } }
       .main_container .center_container .header a {
         color: black;
         text-decoration: none; }
@@ -190,24 +190,12 @@ table {
           display: flex;
           align-items: center;
           margin-top: 4px; }
-          @media (min-width: 1024px) and (max-width: 1199px) {
-            .main_container .center_container .header .header_nav .header_nav_button {
-              color: red; } }
-          @media (min-width: 900px) and (max-width: 1023px) {
-            .main_container .center_container .header .header_nav .header_nav_button {
-              color: green; } }
-          @media (min-width: 600px) and (max-width: 899px) {
-            .main_container .center_container .header .header_nav .header_nav_button {
-              color: orange; } }
           @media (min-width: 400px) and (max-width: 599px) {
             .main_container .center_container .header .header_nav .header_nav_button {
-              color: grey;
               margin-right: 5%; } }
           @media (max-width: 399px) {
             .main_container .center_container .header .header_nav .header_nav_button {
-              color: blue;
               margin-right: 2%;
-              border: 1px solid red;
               margin-left: 5%;
               margin-bottom: 4px; } }
         .main_container .center_container .header .header_nav .header_nav_button:hover {
@@ -278,7 +266,7 @@ table {
       height: auto; }
       @media (max-width: 399px) {
         .main_container .center_container .title .abstract {
-          margin-top: 40px; } }
+          margin-top: 56px; } }
     .main_container .center_container .title .name {
       margin-bottom: 186px;
       margin-top: 180px;
@@ -289,10 +277,10 @@ table {
           margin-right: 48%; } }
       @media (min-width: 400px) and (max-width: 599px) {
         .main_container .center_container .title .name {
-          margin-left: 13%;
+          margin-left: 30%;
           margin-right: 60%;
-          margin-top: 40px;
-          margin-bottom: 40px;
+          margin-top: 80px;
+          margin-bottom: 80px;
           transform: scale(0.8); } }
       @media (max-width: 399px) {
         .main_container .center_container .title .name {
