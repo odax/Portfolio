@@ -157,7 +157,8 @@ table {
       height: 71px;
       background-color: white;
       width: 1200px;
-      border-bottom: 1px solid #3b363d; }
+      border-bottom: 1px solid #3b363d;
+      z-index: 100; }
       @media (max-width: 399px) {
         .main_container .center_container .header {
           height: 40px; } }
@@ -732,7 +733,7 @@ table {
       margin-top: 200px;
       opacity: 0.5; }
     .main_container .center_container .contact_form {
-      margin-top: 300px;
+      margin-top: 240px;
       display: flex;
       justify-content: center;
       height: 625px;

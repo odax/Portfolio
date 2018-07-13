@@ -233,6 +233,7 @@ $sed: "Sedgwick Ave", cursive;
       background-color: white;
       width: 1200px;
       border-bottom: 1px solid #3b363d;
+      z-index: 100;
       @include phone {
         height: 40px;
       }
@@ -862,7 +863,7 @@ $sed: "Sedgwick Ave", cursive;
 
     }
     .contact_form {
-      margin-top: 300px;
+      margin-top: 240px;
       display: flex;
       justify-content: center;
       height: 625px;

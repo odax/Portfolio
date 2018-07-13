@@ -11,6 +11,7 @@ import tech from "../../assets/desktop_assets/tech.png";
 import vivahands from "../../assets/desktop_assets/Vivahands.png";
 import abstract from "../../assets/desktop_assets/abstract.png";
 import line from "../../assets/desktop_assets/Line.png";
+import Fade from 'react-reveal/Fade';
 
 export default class MainView extends Component {
   render() {
@@ -52,6 +53,7 @@ export default class MainView extends Component {
               <span className="apps_playstore">availible on the playstore</span>
             </div>
             <div className="apps_main">
+            <Fade top>
               <div className="apps_main_one">
                 <div>
                   <img
@@ -69,6 +71,8 @@ export default class MainView extends Component {
                   your loved ones no matter the distance between.
                 </div>
               </div>
+            </Fade>
+            <Fade top>
               <div className="apps_main_two">
                 <div>
                   <img
@@ -86,6 +90,7 @@ export default class MainView extends Component {
                   firewood suppliers and vice-versa.
                 </div>
               </div>
+            </Fade>
             </div>
           </a>
           <img src={tech} className="tech_img" alt="tech background" />
@@ -99,6 +104,7 @@ export default class MainView extends Component {
               </div>
               <div className="skills_language_items">
                 <ul>
+                  <Fade right>
                   <li>HTML5</li>
                   <li>CSS3</li>
                   <li>LESS</li>
@@ -113,6 +119,7 @@ export default class MainView extends Component {
                   <li>WebTokens</li>
                   <li>Jest</li>
                   <li>C</li>
+                  </Fade>
                 </ul>
               </div>
               <div className="skills_header_2">
@@ -120,10 +127,12 @@ export default class MainView extends Component {
               </div>
               <div className="skills_approach_items">
                 <ul>
+                  <Fade right>
                   <li>CRUD</li>
                   <li>REST</li>
                   <li>Trello</li>
                   <li>Figma</li>
+                  </Fade>
                 </ul>
               </div>
               <div className="skills_header_3">
@@ -131,9 +140,11 @@ export default class MainView extends Component {
               </div>
               <div className="skills_version_items">
                 <ul>
+                  <Fade right>
                   <li>GIT</li>
                   <li>Bash</li>
                   <li>Command Line</li>
+                  </Fade>
                 </ul>
               </div>
             </div>
