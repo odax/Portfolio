@@ -5,12 +5,12 @@ import coffee from "../../assets/desktop_assets/coffee.png";
 import GitHub_Logo from "../../assets/desktop_assets/GitHub_Logo.png";
 import grafitti from "../../assets/desktop_assets/grafitti.png";
 import linkedin from "../../assets/desktop_assets/linked-in-logo-key.png";
-import logsnow from "../../assets/desktop_assets/logsnow.png";
+import logsnow from "../../assets/desktop_assets/noteex.png";
 import name from "../../assets/desktop_assets/namesingle.png";
 import tech from "../../assets/desktop_assets/tech.png";
-import vivahands from "../../assets/desktop_assets/Vivahands.png";
+import vivahands from "../../assets/desktop_assets/mapscratcher.png";
 import abstract from "../../assets/desktop_assets/abstract.png";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 
 export default class MainView extends Component {
   render() {
@@ -46,49 +46,84 @@ export default class MainView extends Component {
             <img src={name} className="name" alt="Nalee Riddell" />
             <img src={grafitti} className="grafitti" alt="grafitti art" />
           </div>
-          <div id='appsid'></div>
+          <div id="appsid" />
           <a className="apps">
             <div className="apps_top">
               <span className="apps_title">Web Apps</span>
-              <span className="apps_playstore"></span>
+              <span className="apps_playstore" />
             </div>
             <div className="apps_main">
               <div className="apps_main_one">
                 <div>
-                  <img
-                    src={vivahands}
-                    className="vivahands_img"
-                    alt="vivahands app"
-                  />
+                  <a
+                    target="_blank"
+                    href="https://scratch-n-map.herokuapp.com/"
+                  >
+                    <img
+                      src={vivahands}
+                      className="vivahands_img"
+                      alt="vivahands app"
+                    />
+                  </a>
                 </div>
                 <div className="vivahands_title_site">
-                  <span className="vivahands_title">MapScratcher</span>
-                  <span className="vivahands_site">scratch-n-map.herokuapp.com</span>
+                  <span className="vivahands_title">
+                    {" "}
+                    <a
+                      target="_blank"
+                      href="https://scratch-n-map.herokuapp.com/"
+                    >
+                      MapScratcher
+                    </a>
+                  </span>
+                  <span className="vivahands_site">
+                    scratch-n-map.herokuapp.com
+                  </span>
                 </div>
                 <div className="vivahands_info">
-                  MapScratcher is an application for those interested in traveling. Keep track of where you've been and where you want to go! Just scratch the map! Connect with facebook friends and see their travels too! Written in MERN and deployed on Heroku.
+                  MapScratcher is an application for those interested in
+                  traveling. Keep track of where you've been and where you want
+                  to go! Just scratch the map! Connect with facebook friends and
+                  see their travels too! Written in MERN and deployed on Heroku.
                 </div>
               </div>
               <div className="apps_main_two">
                 <div>
-                  <img
-                    src={logsnow}
-                    className="logsnow_img"
-                    alt="logsnow app"
-                  />
+                  <a
+                    target="_blank"
+                    href="https://noteapp-97e6a.firebaseapp.com/signin"
+                  >
+                    <img
+                      src={logsnow}
+                      className="logsnow_img"
+                      alt="logsnow app"
+                    />
+                  </a>
                 </div>
                 <div className="logsnow_title_site">
-                  <span className="logsnow_title">Notee X</span>
-                  <span className="logsnow_site">https://noteapp-97e6a.firebaseapp.com/</span>
+                  <span className="logsnow_title">
+                    {" "}
+                    <a
+                      target="_blank"
+                      href="https://noteapp-97e6a.firebaseapp.com/signin"
+                    >
+                      Notee X
+                    </a>
+                  </span>
+                  <span className="logsnow_site">
+                    https://noteapp-97e6a.firebaseapp.com/
+                  </span>
                 </div>
                 <div className="logsnow_info">
-                  Notee X is a private and public note-taking app. Write down notes for yourself or for others to read! Written with react, redux, and firebase. Deployed on firebase.
+                  Notee X is a private and public note-taking app. Write down
+                  notes for yourself or for others to read! Written with react,
+                  redux, and firebase. Deployed on firebase.
                 </div>
               </div>
             </div>
           </a>
           <img src={tech} className="tech_img" alt="tech background" />
-          <div id='skillsid'></div>
+          <div id="skillsid" />
           <div className="skills">
             <div className="skills_right">
               <div className="skills_header_1">
@@ -100,20 +135,16 @@ export default class MainView extends Component {
               <div className="skills_language_items">
                 <ul>
                   <Fade right>
-                  <li>HTML5</li>
-                  <li>CSS3</li>
-                  <li>LESS</li>
-                  <li>SASS</li>
-                  <li>Javascript</li>
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>Node</li>
-                  <li>Express</li>
-                  <li>MongoDB</li>
-                  <li>Passport</li>
-                  <li>WebTokens</li>
-                  <li>Jest</li>
-                  <li>C</li>
+                    <li>CSS Preprocessors</li>
+                    <li>Javascript</li>
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>Passport</li>
+                    <li>Jest</li>
+                    <li>Firebase</li>
                   </Fade>
                 </ul>
               </div>
@@ -123,10 +154,12 @@ export default class MainView extends Component {
               <div className="skills_approach_items">
                 <ul>
                   <Fade right>
-                  <li>CRUD</li>
-                  <li>REST</li>
-                  <li>Trello</li>
-                  <li>Figma</li>
+                    <li>Heroku</li>
+                    <li>CRUD</li>
+                    <li>REST</li>
+                    <li>Trello</li>
+                    <li>Figma</li>
+                    <li>Gimp</li>
                   </Fade>
                 </ul>
               </div>
@@ -136,20 +169,18 @@ export default class MainView extends Component {
               <div className="skills_version_items">
                 <ul>
                   <Fade right>
-                  <li>GIT</li>
-                  <li>Bash</li>
-                  <li>Command Line</li>
+                    <li>GIT</li>
                   </Fade>
                 </ul>
               </div>
             </div>
           </div>
           <img src={coffee} className="coffee_img" alt="coffee shop" />
-          <div id='contactid'></div>
+          <div id="contactid" />
           <ContactForm />
           <div className="fineprint">
             Designed and created by Nalee Riddell using Figma and VSCode. To see
-            more work please visit  Github.com/odax.
+            more work please visit Github.com/odax.
           </div>
         </div>
       </div>
