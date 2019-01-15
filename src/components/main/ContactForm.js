@@ -75,7 +75,7 @@ export default class ContactForm extends Component {
             <div className="contact_form_header">
               <div className="contact_form_header_title">Contact</div>
               <div className="contact_form_header_email">
-                Email: nr10@albion.edu
+                or email: riddena@gmail.com
               </div>
             </div>
 
