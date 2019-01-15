@@ -49,8 +49,8 @@ export default class MainView extends Component {
           <div id='appsid'></div>
           <a className="apps">
             <div className="apps_top">
-              <span className="apps_title">Apps</span>
-              <span className="apps_playstore">availible on the playstore</span>
+              <span className="apps_title">Web Apps</span>
+              <span className="apps_playstore"></span>
             </div>
             <div className="apps_main">
               <div className="apps_main_one">
@@ -62,12 +62,11 @@ export default class MainView extends Component {
                   />
                 </div>
                 <div className="vivahands_title_site">
-                  <span className="vivahands_title">Viva Hands</span>
-                  <span className="vivahands_site">vivahands.com</span>
+                  <span className="vivahands_title">MapScratcher</span>
+                  <span className="vivahands_site">scratch-n-map.herokuapp.com</span>
                 </div>
                 <div className="vivahands_info">
-                  Vivahands is a live hand-holding application. Hold hands with
-                  your loved ones no matter the distance between.
+                  MapScratcher is an application for those interested in traveling. Keep track of where you've been and where you want to go! Just scratch the map! Connect with facebook friends and see their travels too! Written in MERN and deployed on Heroku.
                 </div>
               </div>
               <div className="apps_main_two">
@@ -79,12 +78,11 @@ export default class MainView extends Component {
                   />
                 </div>
                 <div className="logsnow_title_site">
-                  <span className="logsnow_title">Logs Now</span>
-                  <span className="logsnow_site">logsnow.com</span>
+                  <span className="logsnow_title">Notee X</span>
+                  <span className="logsnow_site">https://noteapp-97e6a.firebaseapp.com/</span>
                 </div>
                 <div className="logsnow_info">
-                  Logs Now is a utility designed to connect campers to local
-                  firewood suppliers and vice-versa.
+                  Notee X is a private and public note-taking app. Write down notes for yourself or for others to read! Written with react, redux, and firebase. Deployed on firebase.
                 </div>
               </div>
             </div>
