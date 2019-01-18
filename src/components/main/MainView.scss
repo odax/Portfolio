@@ -235,7 +235,7 @@ $sed: "Sedgwick Ave", cursive;
       border-bottom: 1px solid #3b363d;
       z-index: 100;
       @include phone {
-        height: 56px;
+        height: 70px;
       }
       a {
         color: black;
@@ -355,6 +355,7 @@ $sed: "Sedgwick Ave", cursive;
         height: auto;
         @include phone {
           margin-top: 56px;
+          height: 70px;
         }
       }
       .name {
