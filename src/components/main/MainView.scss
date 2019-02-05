@@ -359,25 +359,15 @@ $sed: "Sedgwick Ave", cursive;
         }
       }
       .name {
-        margin-bottom: 186px;
-        margin-top: 180px;
-        margin-left: 50.9%;
+        margin-left: 51%;
+        margin-top: 23vh;
+        margin-bottom: 23vh;
         @include tab {
-          margin-left: 9%;
-          margin-right: 48%;
         }
         @include smalltab {
-          margin-left: 30%;
-          margin-right: 60%;
-          margin-top: 80px;
-          margin-bottom: 80px;
           transform: scale(.8);
         }
         @include phone {
-          margin-left: 10%;
-          margin-right: 5%;
-          margin-top: 80px;
-          margin-bottom: 80px;
           transform: scale(.7);
         }
       }

@@ -269,26 +269,14 @@ table {
           margin-top: 56px;
           height: 70px; } }
     .main_container .center_container .title .name {
-      margin-bottom: 186px;
-      margin-top: 180px;
-      margin-left: 50.9%; }
-      @media (min-width: 600px) and (max-width: 899px) {
-        .main_container .center_container .title .name {
-          margin-left: 9%;
-          margin-right: 48%; } }
+      margin-left: 51%;
+      margin-top: 23vh;
+      margin-bottom: 23vh; }
       @media (min-width: 400px) and (max-width: 599px) {
         .main_container .center_container .title .name {
-          margin-left: 30%;
-          margin-right: 60%;
-          margin-top: 80px;
-          margin-bottom: 80px;
           transform: scale(0.8); } }
       @media (max-width: 399px) {
         .main_container .center_container .title .name {
-          margin-left: 10%;
-          margin-right: 5%;
-          margin-top: 80px;
-          margin-bottom: 80px;
           transform: scale(0.7); } }
     .main_container .center_container .title .grafitti {
       max-width: 100%;
