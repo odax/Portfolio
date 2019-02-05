@@ -445,8 +445,16 @@ $sed: "Sedgwick Ave", cursive;
           font-family: $sed;
           font-size: 1.2rem;
           letter-spacing: 1px;
+          @include tab {
+            width: 100%;
+          }
+          @include smalltab {
+            width: 100%;
+          }
           @include phone {
             margin-top: 25px;
+            font-size: 1rem;
+            width: 100%;
           }
         }
         .apps_playstore {
@@ -537,6 +545,7 @@ $sed: "Sedgwick Ave", cursive;
               @include phone {
                 margin-left: -2.7%;
                 height: 20px;
+                font-size: 1rem;
               }
             }
             .vivahands_site {
@@ -591,10 +600,10 @@ $sed: "Sedgwick Ave", cursive;
             }
             @include phone {
               width: 100%;
-              margin-top: 20px;
+              margin-top: 30px;
               margin-left: 0%;
               text-align: center;
-              font-size: 1rem;
+              font-size: .8rem;
             }
           }
         }
@@ -661,6 +670,7 @@ $sed: "Sedgwick Ave", cursive;
               }
               @include phone{
                 margin: 0 7% 0 0;
+                font-size: 1rem;
               }
             }
             .logsnow_site {
@@ -708,10 +718,10 @@ $sed: "Sedgwick Ave", cursive;
               font-size: 1rem;
             }
             @include phone{
-              margin: 20px 0px 0px 0%;
+              margin: 30px 0px 0px 0%;
               width: 100%;
               text-align: center;
-              font-size: 1rem;
+              font-size: 0.8rem;
             }
           }
         }
