@@ -71,7 +71,7 @@ export default class MainView extends Component {
                     {" "}
                     <a
                       target="_blank"
-                      href="https://scratch-n-map.herokuapp.com/"
+                      href="https://www.mapscratcher.app"
                     >
                       MapScratcher
                     </a>
