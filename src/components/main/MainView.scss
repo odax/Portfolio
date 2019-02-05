@@ -362,13 +362,22 @@ $sed: "Sedgwick Ave", cursive;
         margin-left: 51%;
         margin-top: 23vh;
         margin-bottom: 23vh;
+        @include small {
+          margin-left: 0%;
+        }
+        @include smaller {
+          margin-left: 0%;
+        }
         @include tab {
+          margin-left: 0%;
         }
         @include smalltab {
           transform: scale(.8);
+          margin-left: 0%;
         }
         @include phone {
           transform: scale(.7);
+          margin-left: 0%;
         }
       }
       .grafitti {

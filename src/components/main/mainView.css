@@ -272,12 +272,23 @@ table {
       margin-left: 51%;
       margin-top: 23vh;
       margin-bottom: 23vh; }
+      @media (min-width: 1024px) and (max-width: 1199px) {
+        .main_container .center_container .title .name {
+          margin-left: 0%; } }
+      @media (min-width: 900px) and (max-width: 1023px) {
+        .main_container .center_container .title .name {
+          margin-left: 0%; } }
+      @media (min-width: 600px) and (max-width: 899px) {
+        .main_container .center_container .title .name {
+          margin-left: 0%; } }
       @media (min-width: 400px) and (max-width: 599px) {
         .main_container .center_container .title .name {
-          transform: scale(0.8); } }
+          transform: scale(0.8);
+          margin-left: 0%; } }
       @media (max-width: 399px) {
         .main_container .center_container .title .name {
-          transform: scale(0.7); } }
+          transform: scale(0.7);
+          margin-left: 0%; } }
     .main_container .center_container .title .grafitti {
       max-width: 100%;
       height: auto; }
