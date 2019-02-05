@@ -234,8 +234,21 @@ $sed: "Sedgwick Ave", cursive;
       width: 1200px;
       border-bottom: 1px solid #3b363d;
       z-index: 100;
+      @include small {
+        justify-content: flex-start;
+      }
+      @include smaller {
+        justify-content: flex-start;
+      }
+      @include tab {
+        justify-content: flex-start;
+      }
+      @include smalltab {
+        justify-content: flex-start;
+      }
       @include phone {
-        height: 70px;
+        height: 40px;
+        justify-content: flex-start;
       }
       a {
         color: black;
@@ -249,17 +262,14 @@ $sed: "Sedgwick Ave", cursive;
         font-size: 1.2rem;
         @include tab {
           font-size: 1.1rem;
-          margin-left: 5%;
         }
         @include smalltab {
           font-size: 1rem;
-          margin-left: 5%;
-          width: 40%;
-          margin-right: 2%;
+          width: 20%;
         }
         @include phone {
           font-size: 0.8rem;
-          justify-content: flex-start;
+          display: none;
         }
         .header_nav_button {
           height: 26px;
@@ -290,23 +300,26 @@ $sed: "Sedgwick Ave", cursive;
         align-items: center;
         margin-top: 2px;
         @include small {
-          margin-right: 17%;
+          margin-left: 5%;
+          width: 13%;
         }
         @include smaller {
-          margin-right: 27%;
+          margin-left: 5%;
+          width: 13%;
         }
         @include tab {
-          margin-right: 53%;
-          width: 12%;
+          margin-left: 5%;
+          width: 13%;
         }
         @include smalltab {
-          margin-right: 80%;
           margin-top: 4px;
+          margin-left: 1%;
+          width: 10%;
         }
         @include phone {
-          margin-right: 75%;
-          margin-top: 2px;
-          
+          margin-top: 4px;
+          margin-left: 2%;
+          width: 10%;
         }
         .github {
           @include smalltab {
@@ -354,7 +367,7 @@ $sed: "Sedgwick Ave", cursive;
         max-width: 100%;
         height: auto;
         @include phone {
-          margin-top: 56px;
+          margin-top: 40px;
           height: 70px;
         }
       }
