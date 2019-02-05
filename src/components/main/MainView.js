@@ -57,7 +57,7 @@ export default class MainView extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://scratch-n-map.herokuapp.com/"
+                    href="https://www.mapscratcher.app"
                   >
                     <img
                       src={vivahands}
